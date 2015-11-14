@@ -1,0 +1,11 @@
+﻿@using MVCRouting.Infrastructure.Routing
+@using MVCRouting.Infrastructure.Urls;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Inventory Page</h2>
+
+<a href="@Url.GetUrl("Inventory", "")">Inventory Link</a><br/>
+<a href="@Url.GetUrl("Inventory", "Search")">Search Link</a>
+
