@@ -15,7 +15,7 @@ namespace MVCRouting
 
             routes.MapRoute(
                 name: "fr_inventory",
-                url: "fr/inventory/{action}",
+                url: "fr/inventory",
                 defaults: new { controller = "Inventory", action = "Index" }
                 );
 
@@ -39,7 +39,7 @@ namespace MVCRouting
 
             routes.MapRoute(
                 name: "inventory",
-                url: "inventory/{action}",
+                url: "inventory",
                 defaults: new { controller = "Inventory", action = "Index" }
                 );
 

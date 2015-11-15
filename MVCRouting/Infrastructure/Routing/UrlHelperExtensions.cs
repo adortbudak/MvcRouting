@@ -7,7 +7,7 @@ namespace MVCRouting.Infrastructure.Routing
     {
         
 
-        public static string GetUrl(this UrlHelper urlHelper, string controller, string action)
+        public static string CreateLink(this UrlHelper urlHelper, string controller, string action)
         {
             return new OneKeyUrl(urlHelper,controller,action).GetUrl();
         }
