@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using MVCRouting.Data;
 
 namespace MVCRouting
 {
@@ -12,6 +13,10 @@ namespace MVCRouting
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            DataContext context = new DataContext();
+
+            var routeConfigs = context.RouteConfigurations.ToList();
 
             routes.MapRoute(
                 name: "fr_inventory",
